@@ -1,14 +1,18 @@
 /**
  * Jeu du nombre mystère
- * @author  Steve Fallet
+ * @author  Tanguy Jacot
  * @version 1.0
- * @since   2022-08-30 (date de création)
+ * @since   2022-02-08 (date de création)
  */
 
-//Main IIFE (Immediately-Invoked Function Expression, se prononce "iffy")
-(function main() {
-    'use strict';
+'use strict';
 
-   // Ton code de malade ici ...
-
-}()); //main IIFE
+/**
+ * Fonction qui retourne un nombre aléatoire compris entre min et max
+ * @param {number} min
+ * @param {number} max
+ * @returns {number}
+ */
+function tireNombre(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
